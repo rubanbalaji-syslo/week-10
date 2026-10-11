@@ -1,0 +1,75 @@
+%PDF-1.4
+%ASCII   Generated solution document
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 3003 >>
+stream
+BT /F2 15 Tf 42 800 Td (Payroll Register System) Tj ET
+BT /F1 9 Tf 42 774 Td (Category B Practice - Part A, Problem 5) Tj ET
+BT /F2 11 Tf 42 755 Td (Problem summary) Tj ET
+BT /F1 8 Tf 42 737 Td (FullTime pay is a salary, PartTime pay is hours multiplied by rate, and Intern pay is a stipend. Store) Tj ET
+BT /F1 8 Tf 42 724 Td (payslips in an array, then report total pay and the top earner.) Tj ET
+BT /F2 11 Tf 42 709 Td (Java solution) Tj ET
+BT /F3 6.2 Tf 45 691 Td (import java.util.*;) Tj ET
+BT /F3 6.2 Tf 45 682 Td (public class Main {) Tj ET
+BT /F3 6.2 Tf 45 673 Td ( static class Payslip {final String name,type;final double pay;Payslip\(String n,String t,double p\){name=n;type=t) Tj ET
+BT /F3 6.2 Tf 45 664 Td (  public String toString\(\){return "Payslip[name="+name+", type="+type+", pay="+fmt\(pay\)+"]";}}) Tj ET
+BT /F3 6.2 Tf 45 655 Td ( static String fmt\(double n\){return n==Math.rint\(n\)?Long.toString\(\(long\)n\):String.format\(Locale.US,"%.2f",n\);}) Tj ET
+BT /F3 6.2 Tf 45 646 Td ( public static void main\(String[] args\){Scanner sc=new Scanner\(System.in\);List<Payslip> list=new ArrayList<>\(\);) Tj ET
+BT /F3 6.2 Tf 45 637 Td (  while\(sc.hasNextLine\(\)\){String line=sc.nextLine\(\).trim\(\);if\(line.isEmpty\(\)\)continue;String[] p=line.split\("\\\\s) Tj ET
+BT /F3 6.2 Tf 45 628 Td (   switch\(p[0]\){case "FullTime":list.add\(new Payslip\(p[1],"FullTime",Double.parseDouble\(p[2]\)\)\);break;) Tj ET
+BT /F3 6.2 Tf 45 619 Td (    case "PartTime":list.add\(new Payslip\(p[1],"PartTime",Double.parseDouble\(p[2]\)*Double.parseDouble\(p[3]\)\)\);bre) Tj ET
+BT /F3 6.2 Tf 45 610 Td (    case "Intern":list.add\(new Payslip\(p[1],"Intern",Double.parseDouble\(p[2]\)\)\);break;default:System.out.println) Tj ET
+BT /F3 6.2 Tf 45 601 Td (  }) Tj ET
+BT /F3 6.2 Tf 45 592 Td (  Payslip[] slips=list.toArray\(new Payslip[0]\);double total=0;Payslip top=null;) Tj ET
+BT /F3 6.2 Tf 45 583 Td (  for\(Payslip s:slips\){System.out.println\(s\);total+=s.pay;if\(top==null||s.pay>top.pay\)top=s;}) Tj ET
+BT /F3 6.2 Tf 45 574 Td (  System.out.println\("Total "+fmt\(total\)\);if\(top!=null\)System.out.println\("top earner "+top.name\);) Tj ET
+BT /F3 6.2 Tf 45 565 Td ( }) Tj ET
+BT /F3 6.2 Tf 45 556 Td (}) Tj ET
+BT /F2 11 Tf 42 545 Td (Example input) Tj ET
+BT /F3 7.3 Tf 45 527 Td (FullTime Asha 50000) Tj ET
+BT /F3 7.3 Tf 45 516 Td (PartTime Ravi 80 300) Tj ET
+BT /F3 7.3 Tf 45 505 Td (Intern Neha 15000) Tj ET
+BT /F2 11 Tf 42 492 Td (Expected output) Tj ET
+BT /F3 7.3 Tf 45 474 Td (Payslip[name=Asha, type=FullTime, pay=50000]) Tj ET
+BT /F3 7.3 Tf 45 463 Td (Payslip[name=Ravi, type=PartTime, pay=24000]) Tj ET
+BT /F3 7.3 Tf 45 452 Td (Payslip[name=Neha, type=Intern, pay=15000]) Tj ET
+BT /F3 7.3 Tf 45 441 Td (Total 89000) Tj ET
+BT /F3 7.3 Tf 45 430 Td (top earner Asha) Tj ET
+BT /F2 11 Tf 42 417 Td (Complexity) Tj ET
+BT /F1 8 Tf 42 399 Td (Time O\(n\) for summing and finding the top earner. Space O\(n\) for the payslip collection and array.) Tj ET
+BT /F1 7 Tf 520 18 Td (1/1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000046 00000 n 
+0000000095 00000 n 
+0000000152 00000 n 
+0000000298 00000 n 
+0000003352 00000 n 
+0000003422 00000 n 
+0000003497 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3565
+%%EOF

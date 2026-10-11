@@ -1,0 +1,67 @@
+%PDF-1.4
+%ASCII   Generated solution document
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1987 >>
+stream
+BT /F2 15 Tf 42 800 Td (Cancelled Orders Cleanup) Tj ET
+BT /F1 9 Tf 42 774 Td (Category B Coding Assignment - Problem 2) Tj ET
+BT /F2 11 Tf 42 755 Td (Problem summary) Tj ET
+BT /F1 8 Tf 42 737 Td (Remove every node equal to a requested code and return the possibly new head. The algorithm uses a custom) Tj ET
+BT /F1 8 Tf 42 724 Td (node and does not create replacement nodes.) Tj ET
+BT /F2 11 Tf 42 709 Td (Java solution) Tj ET
+BT /F3 6.2 Tf 45 691 Td (public class Main {) Tj ET
+BT /F3 6.2 Tf 45 682 Td ( static class Node { int data; Node next; Node\(int d\){data=d;} }) Tj ET
+BT /F3 6.2 Tf 45 673 Td ( static Node removeAll\(Node head,int code\){) Tj ET
+BT /F3 6.2 Tf 45 664 Td (  while\(head!=null && head.data==code\)head=head.next;) Tj ET
+BT /F3 6.2 Tf 45 655 Td (  Node current=head;) Tj ET
+BT /F3 6.2 Tf 45 646 Td (  while\(current!=null && current.next!=null\){) Tj ET
+BT /F3 6.2 Tf 45 637 Td (   if\(current.next.data==code\)current.next=current.next.next;) Tj ET
+BT /F3 6.2 Tf 45 628 Td (   else current=current.next;) Tj ET
+BT /F3 6.2 Tf 45 619 Td (  }) Tj ET
+BT /F3 6.2 Tf 45 610 Td (  return head;) Tj ET
+BT /F3 6.2 Tf 45 601 Td ( }) Tj ET
+BT /F3 6.2 Tf 45 592 Td ( static Node build\(int... a\){Node h=null,t=null;for\(int x:a\){Node n=new Node\(x\);if\(h==null\)h=n;else t.next=n;t=n) Tj ET
+BT /F3 6.2 Tf 45 583 Td ( static void print\(Node n\){while\(n!=null\){System.out.print\(n.data+" -> "\);n=n.next;}System.out.println\("null"\);}) Tj ET
+BT /F3 6.2 Tf 45 574 Td ( public static void main\(String[] args\){print\(removeAll\(build\(5,3,5,8,5\),5\)\);print\(removeAll\(build\(5,5,5\),5\)\);}) Tj ET
+BT /F3 6.2 Tf 45 565 Td (}) Tj ET
+BT /F2 11 Tf 42 554 Td (Sample output) Tj ET
+BT /F3 7.3 Tf 45 536 Td (3 -> 8 -> null) Tj ET
+BT /F3 7.3 Tf 45 525 Td (null) Tj ET
+BT /F2 11 Tf 42 512 Td (Complexity) Tj ET
+BT /F1 8 Tf 42 494 Td (Time: O\(n\), each node is processed at most a constant number of times. Additional space: O\(1\).) Tj ET
+BT /F1 7 Tf 520 18 Td (1/1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000046 00000 n 
+0000000095 00000 n 
+0000000152 00000 n 
+0000000298 00000 n 
+0000002336 00000 n 
+0000002406 00000 n 
+0000002481 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+2549
+%%EOF

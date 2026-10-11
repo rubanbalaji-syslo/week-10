@@ -1,0 +1,80 @@
+%PDF-1.4
+%ASCII   Generated solution document
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 3943 >>
+stream
+BT /F2 15 Tf 42 800 Td (Concept Question Answers) Tj ET
+BT /F1 9 Tf 42 774 Td (Category B Practice - Part C, Questions 1-10) Tj ET
+BT /F2 11 Tf 42 755 Td (1. Overloading and overriding) Tj ET
+BT /F1 8 Tf 42 737 Td (Overloading uses the same method name with different parameter lists; overload selection occurs at) Tj ET
+BT /F1 8 Tf 42 724 Td (compile time. Overriding supplies a subtype implementation with the same signature; dynamic dispatch) Tj ET
+BT /F1 8 Tf 42 711 Td (selects it at run time based on the actual object.) Tj ET
+BT /F2 11 Tf 42 696 Td (2. Constructor invocation) Tj ET
+BT /F1 8 Tf 42 678 Td (When a derived object is created, base constructors run before derived constructors. In Java, pass values) Tj ET
+BT /F1 8 Tf 42 665 Td (to the base constructor with super\(arguments\), as the first constructor statement.) Tj ET
+BT /F2 11 Tf 42 650 Td (3. Concrete classes, abstract classes, interfaces) Tj ET
+BT /F1 8 Tf 42 632 Td (Concrete classes can be instantiated and hold state and implementation. Abstract classes cannot be) Tj ET
+BT /F1 8 Tf 42 619 Td (instantiated directly and can combine fields, constructors, concrete methods and abstract methods.) Tj ET
+BT /F1 8 Tf 42 606 Td (Interfaces define contracts/capabilities, making them appropriate for shared behavior across unrelated) Tj ET
+BT /F1 8 Tf 42 593 Td (types.) Tj ET
+BT /F2 11 Tf 42 578 Td (4. Identical methods in two interfaces) Tj ET
+BT /F1 8 Tf 42 560 Td (If two interfaces declare the same compatible abstract method signature, one public implementation in the) Tj ET
+BT /F1 8 Tf 42 547 Td (class satisfies both. This demonstrates that a class may combine multiple interface contracts.) Tj ET
+BT /F2 11 Tf 42 532 Td (5. equals\(\) and hashCode\(\)) Tj ET
+BT /F1 8 Tf 42 514 Td (Objects considered equal by equals\(\) must return the same hashCode\(\). Otherwise HashSet and HashMap may) Tj ET
+BT /F1 8 Tf 42 501 Td (fail to find equal keys or may allow logical duplicates because equal objects can map to different) Tj ET
+BT /F1 8 Tf 42 488 Td (buckets.) Tj ET
+BT /F2 11 Tf 42 473 Td (6. Shallow and deep copying) Tj ET
+BT /F1 8 Tf 42 455 Td (A shallow copy copies references to nested mutable objects, so two copies may share and mutate the same) Tj ET
+BT /F1 8 Tf 42 442 Td (nested object \(such as an Address\). A deep copy duplicates those nested mutable objects so each copy can) Tj ET
+BT /F1 8 Tf 42 429 Td (change independently.) Tj ET
+BT /F2 11 Tf 42 414 Td (7. Inner and static nested types) Tj ET
+BT /F1 8 Tf 42 396 Td (A non-static inner class is tied to an enclosing instance and can access its instance members. A static) Tj ET
+BT /F1 8 Tf 42 383 Td (nested class needs no enclosing instance and directly accesses only static members of the outer class. An) Tj ET
+BT /F1 8 Tf 42 370 Td (instance-bound iterator is a suitable inner class; a node/helper type can be static nested.) Tj ET
+BT /F2 11 Tf 42 355 Td (8. Array operation complexity) Tj ET
+BT /F1 8 Tf 42 337 Td (Index access is O\(1\), because the element address is computed directly from the base address and index.) Tj ET
+BT /F1 8 Tf 42 324 Td (Middle insertion/deletion is O\(n\) because later elements must usually be shifted to open or close a gap.) Tj ET
+BT /F2 11 Tf 42 309 Td (9. Polymorphic arrays and dynamic dispatch) Tj ET
+BT /F1 8 Tf 42 291 Td (An array of a base type can store different derived objects. Calling an overridden method through the) Tj ET
+BT /F1 8 Tf 42 278 Td (base reference runs the implementation belonging to each actual object, so explicit type checks are) Tj ET
+BT /F1 8 Tf 42 265 Td (unnecessary.) Tj ET
+BT /F2 11 Tf 42 250 Td (10. IS-A or CAN-DO) Tj ET
+BT /F1 8 Tf 42 232 Td (Use inheritance for a genuine subtype relationship, such as Car IS-A Vehicle. Use interfaces to express a) Tj ET
+BT /F1 8 Tf 42 219 Td (capability shared by unrelated types, such as Car, Phone, and Watch implementing Chargeable.) Tj ET
+BT /F1 7 Tf 520 18 Td (1/1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000046 00000 n 
+0000000095 00000 n 
+0000000152 00000 n 
+0000000298 00000 n 
+0000004292 00000 n 
+0000004362 00000 n 
+0000004437 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+4505
+%%EOF

@@ -1,0 +1,81 @@
+%PDF-1.4
+%ASCII   Generated solution document
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 3439 >>
+stream
+BT /F2 15 Tf 42 800 Td (Bank Account Withdrawal System) Tj ET
+BT /F1 9 Tf 42 774 Td (Category B Practice - Part A, Problem 1) Tj ET
+BT /F2 11 Tf 42 755 Td (Problem summary) Tj ET
+BT /F1 8 Tf 42 737 Td (Savings accounts must maintain at least 1000; Current accounts may go to -5000. Read operations line by) Tj ET
+BT /F1 8 Tf 42 724 Td (line. For each WITHDRAW, print the result, reason for rejection, or Account not found.) Tj ET
+BT /F2 11 Tf 42 709 Td (Java solution) Tj ET
+BT /F3 6.2 Tf 45 691 Td (import java.util.*;) Tj ET
+BT /F3 6.2 Tf 45 682 Td (public class Main {) Tj ET
+BT /F3 6.2 Tf 45 673 Td ( abstract static class Account {final String id;double balance;Account\(String i,double b\){id=i;balance=b;}) Tj ET
+BT /F3 6.2 Tf 45 664 Td (  abstract boolean allowed\(double a\);abstract String reason\(\);) Tj ET
+BT /F3 6.2 Tf 45 655 Td (  boolean withdraw\(double a\){if\(a<=0||!allowed\(a\)\)return false;balance-=a;return true;}}) Tj ET
+BT /F3 6.2 Tf 45 646 Td ( static class Savings extends Account {Savings\(String i,double b\){super\(i,b\);}boolean allowed\(double a\){return b) Tj ET
+BT /F3 6.2 Tf 45 637 Td ( static class Current extends Account {Current\(String i,double b\){super\(i,b\);}boolean allowed\(double a\){return b) Tj ET
+BT /F3 6.2 Tf 45 628 Td ( static String fmt\(double n\){return n==Math.rint\(n\)?Long.toString\(\(long\)n\):Double.toString\(n\);}) Tj ET
+BT /F3 6.2 Tf 45 619 Td ( public static void main\(String[] args\){Scanner sc=new Scanner\(System.in\);Map<String,Account> m=new HashMap<>\(\);) Tj ET
+BT /F3 6.2 Tf 45 610 Td (  while\(sc.hasNextLine\(\)\){String line=sc.nextLine\(\).trim\(\);if\(line.isEmpty\(\)\)continue;String[] p=line.split\("\\\\s) Tj ET
+BT /F3 6.2 Tf 45 601 Td (   if\(p.length==3&&p[0].equals\("Savings"\)\)m.put\(p[1],new Savings\(p[1],Double.parseDouble\(p[2]\)\)\);) Tj ET
+BT /F3 6.2 Tf 45 592 Td (   else if\(p.length==3&&p[0].equals\("Current"\)\)m.put\(p[1],new Current\(p[1],Double.parseDouble\(p[2]\)\)\);) Tj ET
+BT /F3 6.2 Tf 45 583 Td (   else if\(p.length==3&&p[0].equals\("WITHDRAW"\)\){Account a=m.get\(p[1]\);double amount=Double.parseDouble\(p[2]\);) Tj ET
+BT /F3 6.2 Tf 45 574 Td (    if\(a==null\)System.out.println\("Account not found"\);) Tj ET
+BT /F3 6.2 Tf 45 565 Td (    else if\(a.withdraw\(amount\)\)System.out.println\(a.id+" balance "+fmt\(a.balance\)\);) Tj ET
+BT /F3 6.2 Tf 45 556 Td (    else System.out.println\(a.id+" rejected: "+\(amount<=0?"amount must be positive":a.reason\(\)\)\);) Tj ET
+BT /F3 6.2 Tf 45 547 Td (   }) Tj ET
+BT /F3 6.2 Tf 45 538 Td (  }) Tj ET
+BT /F3 6.2 Tf 45 529 Td ( }) Tj ET
+BT /F3 6.2 Tf 45 520 Td (}) Tj ET
+BT /F2 11 Tf 42 509 Td (Example input) Tj ET
+BT /F3 7.3 Tf 45 491 Td (Savings S1 5000) Tj ET
+BT /F3 7.3 Tf 45 480 Td (WITHDRAW S1 4500) Tj ET
+BT /F3 7.3 Tf 45 469 Td (Current C1 2000) Tj ET
+BT /F3 7.3 Tf 45 458 Td (WITHDRAW C1 6000) Tj ET
+BT /F3 7.3 Tf 45 447 Td (WITHDRAW S1 3000) Tj ET
+BT /F3 7.3 Tf 45 436 Td (WITHDRAW C1 2000) Tj ET
+BT /F2 11 Tf 42 423 Td (Expected output) Tj ET
+BT /F3 7.3 Tf 45 405 Td (S1 rejected: minimum balance 1000) Tj ET
+BT /F3 7.3 Tf 45 394 Td (C1 balance -4000) Tj ET
+BT /F3 7.3 Tf 45 383 Td (S1 balance 2000) Tj ET
+BT /F3 7.3 Tf 45 372 Td (C1 rejected: overdraft limit 5000) Tj ET
+BT /F2 11 Tf 42 359 Td (Notes) Tj ET
+BT /F1 8 Tf 42 341 Td (Average account lookup with HashMap is O\(1\). A rejected withdrawal does not change the balance.) Tj ET
+BT /F1 7 Tf 520 18 Td (1/1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000046 00000 n 
+0000000095 00000 n 
+0000000152 00000 n 
+0000000298 00000 n 
+0000003788 00000 n 
+0000003858 00000 n 
+0000003933 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+4001
+%%EOF

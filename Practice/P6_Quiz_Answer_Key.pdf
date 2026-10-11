@@ -1,0 +1,70 @@
+%PDF-1.4
+%ASCII   Generated solution document
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 3009 >>
+stream
+BT /F2 15 Tf 42 800 Td (Quiz Answer Key) Tj ET
+BT /F1 9 Tf 42 774 Td (Category B Practice - Part B, Questions 1-20) Tj ET
+BT /F2 11 Tf 42 755 Td (Answers with reasons) Tj ET
+BT /F1 8 Tf 42 737 Td (Q1. B - protected age and public getName\(\) are accessible within Student; private name is not.) Tj ET
+BT /F1 8 Tf 42 724 Td (Q2. C - Diagram 3 is invalid under single class inheritance because S extends two classes Q and R.) Tj ET
+BT /F1 8 Tf 42 711 Td (Q3. B - Base-to-derived constructor order: Person, Employee, Manager.) Tj ET
+BT /F1 8 Tf 42 698 Td (Q4. C - A derived class can directly access a protected field. It cannot access privateField, override) Tj ET
+BT /F1 8 Tf 42 685 Td (finalMethod, or weaken public visibility.) Tj ET
+BT /F1 8 Tf 42 672 Td (Q5. B - Runtime dispatch invokes Bus.fare\(\) for a Bus instance.) Tj ET
+BT /F1 8 Tf 42 659 Td (Q6. B - Printer's print\(String\) and print\(int\) are overloads; SpecialPrinter overrides print\(String\).) Tj ET
+BT /F1 8 Tf 42 646 Td (Q7. A - A Shape reference directly exposes members declared by Shape; Circle-specific members require a) Tj ET
+BT /F1 8 Tf 42 633 Td (Circle reference or cast.) Tj ET
+BT /F1 8 Tf 42 620 Td (Q8. C - Circle.area\(\) and Square.area\(\) are invoked according to the runtime object.) Tj ET
+BT /F1 8 Tf 42 607 Td (Q9. B - Casting the Current object to Savings fails; casting it to Current succeeds.) Tj ET
+BT /F1 8 Tf 42 594 Td (Q10. B - Polymorphism lets different Plan subtypes be processed uniformly through a base reference.) Tj ET
+BT /F1 8 Tf 42 581 Td (Q11. A - printDocument\(\) is the exposed behavior; the buffer and helper methods are hidden implementation) Tj ET
+BT /F1 8 Tf 42 568 Td (details.) Tj ET
+BT /F1 8 Tf 42 555 Td (Q12. B - A Vehicle reference may reference a Car object, but abstract Vehicle cannot be instantiated.) Tj ET
+BT /F1 8 Tf 42 542 Td (Q13. B - A subclass missing an abstract method implementation must itself be abstract.) Tj ET
+BT /F1 8 Tf 42 529 Td (Q14. B - A concrete MonthlyReport without generateBody\(\) does not compile.) Tj ET
+BT /F1 8 Tf 42 516 Td (Q15. A - An interface specifies operations a type promises to provide, not per-object state or full) Tj ET
+BT /F1 8 Tf 42 503 Td (direct implementation.) Tj ET
+BT /F1 8 Tf 42 490 Td (Q16. B - Interface abstract methods are implicitly public abstract; fields are public static final.) Tj ET
+BT /F1 8 Tf 42 477 Td (Q17. C - DataProcessor must fulfill both serialize\(\) and reset\(\).) Tj ET
+BT /F1 8 Tf 42 464 Td (Q18. C - An interface is the appropriate contract for unrelated classes sharing a capability.) Tj ET
+BT /F1 8 Tf 42 451 Td (Q19. B - Dog IS-A Animal \(generalization\); Eagle CAN-DO Flyable \(realization\).) Tj ET
+BT /F1 8 Tf 42 438 Td (Q20. A - equals\(\), hashCode\(\), and toString\(\) are common Object methods often overridden.) Tj ET
+BT /F2 11 Tf 42 423 Td (Compact answer string) Tj ET
+BT /F1 8 Tf 42 405 Td (B, C, B, C, B, B, A, C, B, B, A, B, B, B, A, B, C, C, B, A.) Tj ET
+BT /F1 7 Tf 520 18 Td (1/1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000046 00000 n 
+0000000095 00000 n 
+0000000152 00000 n 
+0000000298 00000 n 
+0000003358 00000 n 
+0000003428 00000 n 
+0000003503 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3571
+%%EOF

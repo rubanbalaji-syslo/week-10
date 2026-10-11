@@ -1,0 +1,75 @@
+%PDF-1.4
+%ASCII   Generated solution document
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 3017 >>
+stream
+BT /F2 15 Tf 42 800 Td (Campus Vehicle Pass System) Tj ET
+BT /F1 9 Tf 42 774 Td (Category B Practice - Part A, Problem 2) Tj ET
+BT /F2 11 Tf 42 755 Td (Problem summary) Tj ET
+BT /F1 8 Tf 42 737 Td (Yearly fees: Bike 300, Car 1000, E-Bike 300, E-Car 1000. Only electric vehicles can book charging.) Tj ET
+BT /F1 8 Tf 42 724 Td (Vehicle subclasses provide type/fee; the Chargeable interface models the capability.) Tj ET
+BT /F2 11 Tf 42 709 Td (Java solution) Tj ET
+BT /F3 6.2 Tf 45 691 Td (import java.util.*;) Tj ET
+BT /F3 6.2 Tf 45 682 Td (public class Main {) Tj ET
+BT /F3 6.2 Tf 45 673 Td ( interface Chargeable {boolean bookChargingBay\(\);}) Tj ET
+BT /F3 6.2 Tf 45 664 Td ( abstract static class Vehicle {final String pass,owner;Vehicle\(String p,String o\){pass=p;owner=o;}abstract Stri) Tj ET
+BT /F3 6.2 Tf 45 655 Td ( static class Bike extends Vehicle {Bike\(String p,String o\){super\(p,o\);}String type\(\){return "Bike";}int fee\(\){r) Tj ET
+BT /F3 6.2 Tf 45 646 Td ( static class Car extends Vehicle {Car\(String p,String o\){super\(p,o\);}String type\(\){return "Car";}int fee\(\){retu) Tj ET
+BT /F3 6.2 Tf 45 637 Td ( static class EBike extends Vehicle implements Chargeable {EBike\(String p,String o\){super\(p,o\);}String type\(\){re) Tj ET
+BT /F3 6.2 Tf 45 628 Td ( static class ECar extends Vehicle implements Chargeable {ECar\(String p,String o\){super\(p,o\);}String type\(\){retu) Tj ET
+BT /F3 6.2 Tf 45 619 Td ( static Vehicle make\(String t,String p,String o\){switch\(t.toLowerCase\(\)\){case "bike":return new Bike\(p,o\);case ") Tj ET
+BT /F3 6.2 Tf 45 610 Td ( public static void main\(String[] args\){Scanner sc=new Scanner\(System.in\);Map<String,Vehicle> m=new HashMap<>\(\);) Tj ET
+BT /F3 6.2 Tf 45 601 Td (  while\(sc.hasNextLine\(\)\){String line=sc.nextLine\(\).trim\(\);if\(line.isEmpty\(\)\)continue;String[] p=line.split\("\\\\s) Tj ET
+BT /F3 6.2 Tf 45 592 Td (   if\(p[0].equals\("PASS"\)&&p.length>=4\){String owner=String.join\(" ",Arrays.copyOfRange\(p,3,p.length\)\);Vehicle v) Tj ET
+BT /F3 6.2 Tf 45 583 Td (   else if\(p[0].equals\("CHARGE"\)&&p.length==2\){Vehicle v=m.get\(p[1]\);if\(v==null\)System.out.println\("Vehicle not ) Tj ET
+BT /F3 6.2 Tf 45 574 Td (  }) Tj ET
+BT /F3 6.2 Tf 45 565 Td ( }) Tj ET
+BT /F3 6.2 Tf 45 556 Td (}) Tj ET
+BT /F2 11 Tf 42 545 Td (Example input) Tj ET
+BT /F3 7.3 Tf 45 527 Td (PASS Bike KA01 Asha) Tj ET
+BT /F3 7.3 Tf 45 516 Td (PASS ECar KA02 Ravi) Tj ET
+BT /F3 7.3 Tf 45 505 Td (CHARGE KA02) Tj ET
+BT /F3 7.3 Tf 45 494 Td (CHARGE KA01) Tj ET
+BT /F2 11 Tf 42 481 Td (Expected output) Tj ET
+BT /F3 7.3 Tf 45 463 Td (KA01 \(Bike\) pass fee 300) Tj ET
+BT /F3 7.3 Tf 45 452 Td (KA02 \(ECar\) pass fee 1000) Tj ET
+BT /F3 7.3 Tf 45 441 Td (KA02 charging bay allotted) Tj ET
+BT /F3 7.3 Tf 45 430 Td (KA01 rejected: charging unsupported) Tj ET
+BT /F2 11 Tf 42 417 Td (Notes) Tj ET
+BT /F1 8 Tf 42 399 Td (An interface expresses a CAN-DO capability; non-electric vehicle classes do not implement Chargeable.) Tj ET
+BT /F1 7 Tf 520 18 Td (1/1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000046 00000 n 
+0000000095 00000 n 
+0000000152 00000 n 
+0000000298 00000 n 
+0000003366 00000 n 
+0000003436 00000 n 
+0000003511 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3579
+%%EOF

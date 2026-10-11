@@ -1,0 +1,60 @@
+%PDF-1.4
+%ASCII   Generated solution document
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1584 >>
+stream
+BT /F2 15 Tf 42 800 Td (Round-Robin Game Turns) Tj ET
+BT /F1 9 Tf 42 774 Td (Category B Coding Assignment - Problem 5) Tj ET
+BT /F2 11 Tf 42 755 Td (Problem summary) Tj ET
+BT /F1 8 Tf 42 737 Td (Store players in a circular singly linked list with a tail reference. Head is tail.next; traversal wraps) Tj ET
+BT /F1 8 Tf 42 724 Td (back to the head automatically.) Tj ET
+BT /F2 11 Tf 42 709 Td (Java solution) Tj ET
+BT /F3 6.2 Tf 45 691 Td (public class Main {) Tj ET
+BT /F3 6.2 Tf 45 682 Td ( static class Node {String name;Node next;Node\(String n\){name=n;}}) Tj ET
+BT /F3 6.2 Tf 45 673 Td ( static class CircularPlayers {Node tail;) Tj ET
+BT /F3 6.2 Tf 45 664 Td (  void addLast\(String name\){Node n=new Node\(name\);if\(tail==null\){tail=n;n.next=n;}else{n.next=tail.next;tail.nex) Tj ET
+BT /F3 6.2 Tf 45 655 Td (  void printTurns\(int turns\){if\(tail==null||turns<1\)throw new IllegalStateException\("players/turns must be posit) Tj ET
+BT /F3 6.2 Tf 45 646 Td (   Node p=tail.next;for\(int i=0;i<turns;i++\){if\(i>0\)System.out.print\(" "\);System.out.print\(p.name\);p=p.next;}Sys) Tj ET
+BT /F3 6.2 Tf 45 637 Td ( }) Tj ET
+BT /F3 6.2 Tf 45 628 Td ( public static void main\(String[] args\){CircularPlayers p=new CircularPlayers\(\);p.addLast\("Asha"\);p.addLast\("Rav) Tj ET
+BT /F3 6.2 Tf 45 619 Td (}) Tj ET
+BT /F2 11 Tf 42 608 Td (Sample output) Tj ET
+BT /F3 7.3 Tf 45 590 Td (Asha Ravi Neha Asha Ravi Neha Asha) Tj ET
+BT /F2 11 Tf 42 577 Td (Complexity) Tj ET
+BT /F1 8 Tf 42 559 Td (addLast: O\(1\). printTurns\(turns\): O\(turns\).) Tj ET
+BT /F1 7 Tf 520 18 Td (1/1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000046 00000 n 
+0000000095 00000 n 
+0000000152 00000 n 
+0000000298 00000 n 
+0000001933 00000 n 
+0000002003 00000 n 
+0000002078 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+2146
+%%EOF

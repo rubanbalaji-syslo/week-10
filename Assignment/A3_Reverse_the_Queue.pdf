@@ -1,0 +1,64 @@
+%PDF-1.4
+%ASCII   Generated solution document
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1783 >>
+stream
+BT /F2 15 Tf 42 800 Td (Reverse the Queue) Tj ET
+BT /F1 9 Tf 42 774 Td (Category B Coding Assignment - Problem 3) Tj ET
+BT /F2 11 Tf 42 755 Td (Problem summary) Tj ET
+BT /F1 8 Tf 42 737 Td (Reverse a singly linked list in place. No new nodes may be created. The implementation handles empty and) Tj ET
+BT /F1 8 Tf 42 724 Td (one-node lists.) Tj ET
+BT /F2 11 Tf 42 709 Td (Java solution) Tj ET
+BT /F3 6.2 Tf 45 691 Td (public class Main {) Tj ET
+BT /F3 6.2 Tf 45 682 Td ( static class Node {int data;Node next;Node\(int d\){data=d;}}) Tj ET
+BT /F3 6.2 Tf 45 673 Td ( static Node reverse\(Node head\){) Tj ET
+BT /F3 6.2 Tf 45 664 Td (  Node previous=null,current=head;) Tj ET
+BT /F3 6.2 Tf 45 655 Td (  while\(current!=null\){Node next=current.next;current.next=previous;previous=current;current=next;}) Tj ET
+BT /F3 6.2 Tf 45 646 Td (  return previous;) Tj ET
+BT /F3 6.2 Tf 45 637 Td ( }) Tj ET
+BT /F3 6.2 Tf 45 628 Td ( static Node build\(int... a\){Node h=null,t=null;for\(int x:a\){Node n=new Node\(x\);if\(h==null\)h=n;else t.next=n;t=n) Tj ET
+BT /F3 6.2 Tf 45 619 Td ( static void print\(Node n\){while\(n!=null\){System.out.print\(n.data+" -> "\);n=n.next;}System.out.println\("null"\);}) Tj ET
+BT /F3 6.2 Tf 45 610 Td ( public static void main\(String[] args\){print\(reverse\(build\(1,2,3,4\)\)\);print\(reverse\(build\(9\)\)\);print\(reverse\(nu) Tj ET
+BT /F3 6.2 Tf 45 601 Td (}) Tj ET
+BT /F2 11 Tf 42 590 Td (Sample output) Tj ET
+BT /F3 7.3 Tf 45 572 Td (4 -> 3 -> 2 -> 1 -> null) Tj ET
+BT /F3 7.3 Tf 45 561 Td (9 -> null) Tj ET
+BT /F3 7.3 Tf 45 550 Td (null) Tj ET
+BT /F2 11 Tf 42 537 Td (Complexity) Tj ET
+BT /F1 8 Tf 42 519 Td (Time: O\(n\). Additional space: O\(1\). The previous, current and next references reverse each link.) Tj ET
+BT /F1 7 Tf 520 18 Td (1/1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000046 00000 n 
+0000000095 00000 n 
+0000000152 00000 n 
+0000000298 00000 n 
+0000002132 00000 n 
+0000002202 00000 n 
+0000002277 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+2345
+%%EOF

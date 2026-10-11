@@ -1,0 +1,75 @@
+%PDF-1.4
+%ASCII   Generated solution document
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 2583 >>
+stream
+BT /F2 15 Tf 42 800 Td (Student Club Registration Management) Tj ET
+BT /F1 9 Tf 42 774 Td (Category B Practice - Part A, Problem 3) Tj ET
+BT /F2 11 Tf 42 755 Td (Problem summary) Tj ET
+BT /F1 8 Tf 42 737 Td (Members are unique by roll number only, even if incoming Student instances differ by name. Override) Tj ET
+BT /F1 8 Tf 42 724 Td (equals\(\) and hashCode\(\) using rollNumber alone.) Tj ET
+BT /F2 11 Tf 42 709 Td (Java solution) Tj ET
+BT /F3 6.2 Tf 45 691 Td (import java.util.*;) Tj ET
+BT /F3 6.2 Tf 45 682 Td (public class Main {) Tj ET
+BT /F3 6.2 Tf 45 673 Td ( static class Student {final String roll,name;Student\(String r,String n\){roll=r;name=n;}) Tj ET
+BT /F3 6.2 Tf 45 664 Td (  public boolean equals\(Object o\){if\(this==o\)return true;if\(!\(o instanceof Student\)\)return false;return roll.equ) Tj ET
+BT /F3 6.2 Tf 45 655 Td (  public int hashCode\(\){return roll.hashCode\(\);}}) Tj ET
+BT /F3 6.2 Tf 45 646 Td ( public static void main\(String[] args\){Scanner sc=new Scanner\(System.in\);Set<Student> members=new HashSet<>\(\);L) Tj ET
+BT /F3 6.2 Tf 45 637 Td (  while\(sc.hasNextLine\(\)\){String line=sc.nextLine\(\).trim\(\);if\(line.isEmpty\(\)\)continue;String[] p=line.split\("\\\\s) Tj ET
+BT /F3 6.2 Tf 45 628 Td (   if\(p[0].equals\("ADD"\)&&p.length==3\)System.out.println\(members.add\(new Student\(p[1],p[2]\)\)?"Added":"duplicate ) Tj ET
+BT /F3 6.2 Tf 45 619 Td (   else if\(p[0].equals\("CONTAINS"\)&&p.length==3\)checks.add\("contains: "+members.contains\(new Student\(p[1],p[2]\)\)) Tj ET
+BT /F3 6.2 Tf 45 610 Td (  }) Tj ET
+BT /F3 6.2 Tf 45 601 Td (  System.out.println\("member count "+members.size\(\)\);for\(String c:checks\)System.out.println\(c\);) Tj ET
+BT /F3 6.2 Tf 45 592 Td ( }) Tj ET
+BT /F3 6.2 Tf 45 583 Td (}) Tj ET
+BT /F2 11 Tf 42 572 Td (Example input) Tj ET
+BT /F3 7.3 Tf 45 554 Td (ADD 21CS01 Asha) Tj ET
+BT /F3 7.3 Tf 45 543 Td (ADD 21CS01 Asha) Tj ET
+BT /F3 7.3 Tf 45 532 Td (ADD 21CS02 Ravi) Tj ET
+BT /F3 7.3 Tf 45 521 Td (CONTAINS 21CS02 Ravi) Tj ET
+BT /F3 7.3 Tf 45 510 Td (CONTAINS 21CS03 Priya) Tj ET
+BT /F2 11 Tf 42 497 Td (Expected output) Tj ET
+BT /F3 7.3 Tf 45 479 Td (Added) Tj ET
+BT /F3 7.3 Tf 45 468 Td (duplicate rejected) Tj ET
+BT /F3 7.3 Tf 45 457 Td (Added) Tj ET
+BT /F3 7.3 Tf 45 446 Td (member count 2) Tj ET
+BT /F3 7.3 Tf 45 435 Td (contains: true) Tj ET
+BT /F3 7.3 Tf 45 424 Td (contains: false) Tj ET
+BT /F2 11 Tf 42 411 Td (Notes) Tj ET
+BT /F1 8 Tf 42 393 Td (Average HashSet add/contains time is O\(1\). Both equality methods use roll number only, as required.) Tj ET
+BT /F1 7 Tf 520 18 Td (1/1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000046 00000 n 
+0000000095 00000 n 
+0000000152 00000 n 
+0000000298 00000 n 
+0000002932 00000 n 
+0000003002 00000 n 
+0000003077 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3145
+%%EOF

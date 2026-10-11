@@ -1,0 +1,67 @@
+%PDF-1.4
+%ASCII   Generated solution document
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 2239 >>
+stream
+BT /F2 15 Tf 42 800 Td (Class Marks Grid Analysis) Tj ET
+BT /F1 9 Tf 42 774 Td (Category B Practice - Part A, Problem 4) Tj ET
+BT /F2 11 Tf 42 755 Td (Problem summary) Tj ET
+BT /F1 8 Tf 42 737 Td (Calculate each student's total, three subject averages, and the topper. Input marks are a 2D array with) Tj ET
+BT /F1 8 Tf 42 724 Td (exactly three subject columns.) Tj ET
+BT /F2 11 Tf 42 709 Td (Java solution) Tj ET
+BT /F3 6.2 Tf 45 691 Td (public class Main {) Tj ET
+BT /F3 6.2 Tf 45 682 Td ( static void analyze\(String[] names,int[][] marks\){) Tj ET
+BT /F3 6.2 Tf 45 673 Td (  if\(names.length==0||names.length!=marks.length\)throw new IllegalArgumentException\("Invalid rows"\);) Tj ET
+BT /F3 6.2 Tf 45 664 Td (  int rows=marks.length;double[] subjectTotals=new double[3];int best=0,bestTotal=Integer.MIN_VALUE;) Tj ET
+BT /F3 6.2 Tf 45 655 Td (  System.out.print\("Totals "\);) Tj ET
+BT /F3 6.2 Tf 45 646 Td (  for\(int i=0;i<rows;i++\){if\(marks[i].length!=3\)throw new IllegalArgumentException\("Need 3 subjects"\);int total=) Tj ET
+BT /F3 6.2 Tf 45 637 Td (   for\(int j=0;j<3;j++\){total+=marks[i][j];subjectTotals[j]+=marks[i][j];}) Tj ET
+BT /F3 6.2 Tf 45 628 Td (   if\(i>0\)System.out.print\(", "\);System.out.print\(names[i]+" "+total\);if\(total>bestTotal\){bestTotal=total;best=i) Tj ET
+BT /F3 6.2 Tf 45 619 Td (  }) Tj ET
+BT /F3 6.2 Tf 45 610 Td (  System.out.println\(\);System.out.printf\("averages %.2f, %.2f, %.2f%n",subjectTotals[0]/rows,subjectTotals[1]/ro) Tj ET
+BT /F3 6.2 Tf 45 601 Td (  System.out.println\("topper "+names[best]+" \("+bestTotal+"\)"\);) Tj ET
+BT /F3 6.2 Tf 45 592 Td ( }) Tj ET
+BT /F3 6.2 Tf 45 583 Td ( public static void main\(String[] args\){analyze\(new String[]{"Asha","Ravi","Neha"},new int[][]{{78,85,90},{88,92) Tj ET
+BT /F3 6.2 Tf 45 574 Td (}) Tj ET
+BT /F2 11 Tf 42 563 Td (Sample output) Tj ET
+BT /F3 7.3 Tf 45 545 Td (Totals Asha 253, Ravi 259, Neha 230) Tj ET
+BT /F3 7.3 Tf 45 534 Td (averages 77.00, 82.33, 88.00) Tj ET
+BT /F3 7.3 Tf 45 523 Td (topper Ravi \(259\)) Tj ET
+BT /F2 11 Tf 42 510 Td (Complexity) Tj ET
+BT /F1 8 Tf 42 492 Td (For r students and c subjects, time is O\(r*c\). The subject totals require O\(c\) extra space; here c=3.) Tj ET
+BT /F1 7 Tf 520 18 Td (1/1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000046 00000 n 
+0000000095 00000 n 
+0000000152 00000 n 
+0000000298 00000 n 
+0000002588 00000 n 
+0000002658 00000 n 
+0000002733 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+2801
+%%EOF
